@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>CS2 Grade Calculator</title>
+    </head>
+    <body>
+        <h1>CS2 Grade Calculator</h1>
+        <div class="container">
+            <div class="row final-grade">
+                <p id="total-grade">Total Grade: N/A</p>
+            </div>
+            <div class="row intro">
+                <div class="col">
+                    Syllabus Quiz
+                    <input
+                        class="form-control" type="number" step="0.01" value="0" min="0" max="10"
+                        aria-label="syllabus quiz" id="syllabus-quiz"
+                        onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Command Line Screenshot
+                    <input class="form-control" type="number" step="0.01" value="0" min="0" max="10" aria-label="command line screenshot" id="command-line" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Eustis Screenshot
+                    <input class="form-control" type="number" step="0.01" value="0" min="0" max="10" aria-label="eustis screenshot" id="eustis" onchange=updateGrade()>
+                </div>
+            </div>
+            <div class="row assignments">
+                <div class="col">
+                    Assignment #1
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 1" id="assignment-1" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Assignment #2
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 2" id="assignment-2" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Assignment #3
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 3" id="assignment-3" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Assignment #4
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 4" id="assignment-4" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Assignment #5
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 5" id="assignment-5" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Assignment #6
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 6" id="assignment-6" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Assignment #7
+                    <input class="form-control" type="number" value="0" min="0" aria-label="assignment 7" id="assignment-7" onchange=updateGrade()>
+                </div>
+            </div>
+            <div class="row exams">
+                <div class="col">
+                    Exam 1
+                    <input class="form-control" type="number" step="0.01" value="0" min="0" aria-label="exam 1" id="exam-1" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Exam 2
+                    <input class="form-control" type="number" step="0.01" value="0" min="0" aria-label="exam 2" id="exam-2" onchange=updateGrade()>
+                </div>
+                <div class="col">
+                    Final Exam
+                    <input class="form-control" type="number" step="0.01" value="0" min="0" aria-label="final exam" id="final-exam" onchange=updateGrade()>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Exit Survey
+                </div>
+                <input class="form-control" type="number" step="0.01" value="0" min="0" max="100" aria-label="exit survey" id="exit-survey" onchange=updateGrade()>
+            </div>
+
+        </div>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
